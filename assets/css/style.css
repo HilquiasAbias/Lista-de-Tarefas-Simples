@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(197, 241, 206);
+    --second-color: rgb(255, 232, 232);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.container {
+    max-width: 768px;
+    min-height: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    background: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 1.5px 1px 1px rgba(15, 6, 6, .3);
+}
+
+.input-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    margin: 30px 0 5px;
+}
+
+#input-todo {
+    width: 250px;
+    padding: 5px;
+    margin: 5px 10px 0 0 ;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.btn-add-todo {
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 1.5px 1px 1px rgba(15, 6, 6, .3);
+}
+
+.todo-card {
+    margin: 10px;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 1.5px 1px 1px rgba(15, 6, 6, .3);
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 40px;
+    padding: 10px 50px;
+    font-size: 1.3em;
+}
+
+.delete-button {
+    background-color: var(--second-color);
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 1.5px 1px 1px rgba(15, 6, 6, .3);
+    cursor: pointer;
+}
+
